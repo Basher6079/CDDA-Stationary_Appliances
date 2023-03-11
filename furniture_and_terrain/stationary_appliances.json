@@ -1,0 +1,78 @@
+[
+  {
+    "id": "ap_con_mix",
+    "name": { "str": "stationary concrete mixer" },
+    "categories": [ "utility" ],
+    "description": "This device produces concrete using your power grid instead of batteries.",
+    "symbol": "$",
+    "color": "dark_gray",
+    "damage_modifier": 10,
+    "damage_reduction": { "all": 30 },
+    "durability": 60,
+    "flags": [ "OBSTACLE", "APPLIANCE" ],
+    "deconstruct": { "items": [ { "item": "con_mix", "count": 1 } ] },
+    "pseudo_tools": [ { "id": "pseudo_con_mix", "hotkey": "p" } ],
+    "epower": 0,
+    "item": "con_mix",
+    "looks_like": "con_mix",
+    "breaks_into": [
+      { "item": "scrap", "count": [ 2, 7 ] },
+      { "item": "steel_chunk", "count": [ 0, 3 ] },
+      { "item": "sheet_metal", "count": [ 2, 6 ] },
+      { "item": "cable", "charges": [ 1, 15 ] }
+    ],
+    "type": "vehicle_part"
+  },
+  {
+    "id": "ap_elec_spin",
+    "name": { "str": "stationary electric spinwheel" },
+    "categories": [ "utility" ],
+    "description": "This device weaves ropes using your power grid instead of batteries.",
+    "symbol": "$",
+    "color": "dark_gray",
+    "damage_modifier": 10,
+    "damage_reduction": { "all": 30 },
+    "durability": 60,
+    "flags": [ "OBSTACLE", "APPLIANCE" ],
+    "deconstruct": { "items": [ { "item": "electric_spinwheel", "count": 1 } ] },
+    "pseudo_tools": [ { "id": "pseudo_elec_spin", "hotkey": "p" } ],
+    "epower": 0,
+    "item": "electric_spinwheel",
+    "looks_like": "f_spinwheel",
+    "breaks_into": [
+      { "item": "scrap", "count": [ 2, 7 ] },
+      { "item": "steel_chunk", "count": [ 0, 3 ] },
+      { "item": "sheet_metal", "count": [ 2, 6 ] },
+      { "item": "cable", "charges": [ 1, 15 ] }
+    ],
+    "type": "vehicle_part"
+  },
+  {
+    "id": "ap_oil_press",
+    "name": { "str": "stationary oil press" },
+    "categories": [ "utility" ],
+    "description": "This device produces oil using your power grid instead of batteries.",
+    "symbol": "Y",
+    "color": "green",
+    "damage_modifier": 10,
+    "damage_reduction": { "all": 30 },
+    "durability": 200,
+    "flags": [ "OBSTACLE", "CARGO", "APPLIANCE" ],
+    "deconstruct": { "items": [ { "item": "oil_press_electric", "count": 1 } ] },
+    "pseudo_tools": [ { "id": "pseudo_veh_oil_press", "hotkey": "p" } ],
+    "size": "5 L",
+    "epower": 0,
+    "item": "oil_press_electric",
+    "looks_like": "oil_press_electric",
+    "breaks_into": [
+      { "item": "steel_lump", "count": [ 4, 7 ] },
+      { "item": "steel_chunk", "count": [ 3, 6 ] },
+      { "item": "sheet_metal_small", "count": [ 4, 8 ] },
+      { "item": "scrap", "count": [ 4, 7 ] },
+      { "item": "element", "count": [ 0, 2 ] },
+      { "item": "pipe", "prob": 50 },
+      { "item": "motor_small", "prob": 25 }
+    ],
+    "type": "vehicle_part"
+  }
+]
